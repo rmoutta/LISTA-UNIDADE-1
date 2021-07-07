@@ -1,0 +1,11 @@
+float comparador(const void *num1, const void *num2){
+	if (*(float*)num1 > *(float*)num2){
+    	return 1;
+   } else if (*(float*)num1 < *(float*)num2){
+    	return -1;
+   } else {
+    	return 0;
+   }
+}
+
+qsort(vetor_utilizado, quant_numeros, sizeof(float), comparador);
