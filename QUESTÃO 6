@@ -1,0 +1,5 @@
+a)contador =0; valor=1.1; valor=1.1; endereço=endereço do primeiro elemento do vetor (62FDF0); endereço=endereço do primeiro elemento do vetor, guardado no ponteiro;
+b) contador =1; valor=2.2; valor=2.2; endereço=endereço do segundo elemento do vetor (62FDF4); endereço=endereço do segundo elemento do vetor, guardado no ponteiro;
+c) contador =2; valor=3.3; valor=3.3; endereço=endereço do terceiro elemento do vetor (62FDF8); endereço=endereço do terceiro elemento do vetor, guardado no ponteiro;
+d) contador =3; valor=4.4; valor=4.4; endereço=endereço do quarto elemento do vetor (62FDFC); endereço=endereço do quarto elemento do vetor, guardado no ponteiro;
+e) contador =4; valor=5.5; valor=5.5; endereço=endereço do quinto elemento do vetor(62FE00); endereço=endereço do quinto elemento do vetor, guardado no ponteiro;
