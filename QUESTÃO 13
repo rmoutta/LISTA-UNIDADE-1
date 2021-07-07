@@ -41,6 +41,5 @@ int main (void){
 	}
 				
 	free(vetor);
-	getch();
 	return 0;
 }
