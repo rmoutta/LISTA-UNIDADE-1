@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+float soma_vetores(float *vetor1,float *vetor2,float *vetor_soma,float *quant_numeros){
+	int j;
+	for(j = 0;j < quant_numeros;j++){
+		vetor_soma[j] = vetor1[j] + vetor2[j];
+	}
+	
+	for(j = 0;j < quant_numeros; j++){
+		printf("%f  ", vetor_soma[j]);
+	}
+} //Bloco função responsável por fazer a soma entre os termos dos vetores;
+
+
+int main(void){
+	
+	
+	setlocale(LC_ALL,"");
+	float *vetor1, *vetor2, *vetor_soma, *parametro;
+	int quant_numeros, i;
+	
+	printf("Digite a quantidade de números dos vetores 1 e 2: ");
+	scanf("%d",&quant_numeros);
+	
+	vetor1 = (float *) malloc(quant_numeros * sizeof(float));
+	vetor2 = (float *) malloc(quant_numeros * sizeof(float));
+	vetor_soma = (float *) malloc(quant_numeros * sizeof(float));
+	
+	for(i = 0;i < quant_numeros;i++){
+		
+		printf("Digite o %dº número do vetor 1: ",i + 1);
+		scanf("%f", &vetor1[i]);		
+	}
+	
+	for(i = 0;i < quant_numeros;i++){
+		
+		printf("Digite o %dº número do vetor 2: ",i + 1);
+		scanf("%f", &vetor2[i]);		
+	}
+			
+	system("cls");
+	printf("Vetor 1: \n");
+	for(i = 0; i < quant_numeros; i++){
+		printf("%f  ",vetor1[i]);
+	}
+	
+	printf("\nVetor 2: \n");
+	
+	for(i = 0; i < quant_numeros; i++){
+		printf("%f  ",vetor2[i]);
+	}
+	
+printf("\nVetor soma: \n");
+	soma_vetores(vetor1 , vetor2 , vetor_soma  ,quant_numeros); //Chama a função soma dos vetores;
+	
+free(vetor1);
+free(vetor2);
+free(vetor_soma);	
+	
+return 0;
+}
