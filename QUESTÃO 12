@@ -1,0 +1,26 @@
+//Ponteiros para funções são argumentos para outras funções, sendo que a função apontada pode ser chamada a partir do ponteiro que lhe referencia. Um exemplo simples é na 
+chamada da função no seguinte programa:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int primo (int a){
+	int divisor=0, aux=0;
+	for(divisor = 1; divisor <= a; divisor++){
+      		  if(a % divisor == 0){
+			aux=aux+1;}
+	}
+if (aux == 2){
+       		 printf("\n %i eh primo ", a);
+		}else{
+			printf("\n %i nao eh primo", a);}
+}
+
+int main(void){
+	int (*p) (int) = &primo;
+	int a=0;
+	printf("INSIRA UM NUMERO INTEIRO NAO NULO\n");
+	scanf("%i", &a);
+	(*p)(a);
+return 0;
+}
