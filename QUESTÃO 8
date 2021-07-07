@@ -1,0 +1,4 @@
+a) Está correta, no caso será armazenado o valor do vetor mat no ponteiro e apresentará o valor do 2º elemento;
+b) Está correta, o ponteiro irá armazenar o vetor mat e apresentar o primeiro elemento dele;
+c) igual a b;
+d)Está correta, a variavel int x irá armazenar o conteúdo do primeiro elemento do vetor mat;
