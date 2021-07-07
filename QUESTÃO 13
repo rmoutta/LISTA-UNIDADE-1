@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+	setlocale(LC_ALL,"");
+	
+	float *vetor;
+	int quant_numeros, i, j, aux; 
+
+	printf("Digite a quantidade de números para a leitura: ");
+	scanf("%d", &quant_numeros);
+
+	vetor = (float *) malloc(quant_numeros * sizeof(float));
+	
+	for(i = 0;i < quant_numeros;i++){
+		printf("Digite um número para o vetor: \n");
+		scanf("%f", &vetor[i]);	
+	}
+	
+	system("cls");
+	printf("Números declarados: \n");
+	
+	for(i = 0;i < quant_numeros;i++){
+		printf("%f\n",vetor[i]);	
+	}
+	
+	printf("\n Números em ordem crescente: \n");
+	for(i = 0;i < quant_numeros;i++){
+		for(j = i + 1;j < quant_numeros;j++){
+			if(vetor[i] > vetor[j]){
+				aux = vetor[j];
+				vetor[j] = vetor[i];
+				vetor[i] = aux;	
+			}
+		}
+	}
+	
+	for(i = 0;i < quant_numeros;i++){
+		printf("%f\n",vetor[i]);	
+	}
+				
+	free(vetor);
+	getch();
+	return 0;
+}
