@@ -1,0 +1,9 @@
+a) É válido, o terceiro valor do vetor aloha irá receber o valor de value;
+b) É válido, porém o valor lido só será atribuído ao primeiro elemento do vetor aloha;
+c) É inválido, pois a sintaxe de aspas não é utilizada para a atribuição de valores float dessa maneira;
+d) É inválido pois a impressão dos valores de um vetor deve ser feita por elemento;
+e) É válido, o elemento da quarta linha e quarta coluna da matriz coisas receberá o valor do quarto elemento do vetor aloha;
+f) É inválido, pois a atribuição do valor da matriz está apenas com a valor de uma ‘coordenada’, além de que o elemento atribuído pelo vetor não está indicado;
+g) É inválido pois não não há elemento de referenciação na operação de elementos;
+h) É válido, pois no âmbito de ponteiros para vetores é possível realizar a referenciação dos elementos do vetor sem o &, entretanto a desreferenciação deve ser 
+obrigatoriamente feita com o asterisco;
