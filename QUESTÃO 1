@@ -1,0 +1,4 @@
+O aprendizado do uso de ponteiros para linguagem C é importante no âmbito das aplicações em engenharias uma vez que o domínio da programação em C é essencial para essas áreas. 
+Vale ressaltar também que sem o conhecimento de ponteiros as possibilidades dos projetos ficam bem mais limitadas e é necessário uma complexidade bem maior para realizar processos 
+que seriam simples, já que os ponteiros evitam que o desenvolvedor tenha que criar várias variáveis para funções diferentes dentro do programa, levando em consideração que na 
+Engenharia a linguagem C é muito utilizada para desenvolvimento de sistemas, que apresentam diversas funções dentro do programa, a utilização de ponteiros mostra-se bem recorrente.
