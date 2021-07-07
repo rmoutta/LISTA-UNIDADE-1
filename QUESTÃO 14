@@ -37,13 +37,12 @@ int main (void){
 	
 	printf("\n Números em ordem crescente: \n"); //Print do vetor ordenado;
 	
-	qsort(vetor,quant_numeros, sizeof(float),comparador); // o qsort fará a função de ordenar os elementos dentro do vetor.
+	qsort(vetor, quant_numeros, sizeof(float), comparador);
 	
 	for(i = 0;i < quant_numeros;i++){
 		printf("%f , ",vetor[i]);	
 	}
 				
 	free(vetor);
-	return 0;
-	
+	return 0;	
 }
