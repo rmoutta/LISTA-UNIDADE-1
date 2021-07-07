@@ -1,0 +1,2 @@
+O primeiro programa irá imprimir o conteúdo de cada elemento do vetor vet[] a partir de um laço for; 
+Já o segundo irá imprimir o endereço (em hexadecimal) onde cada elemento do vetor está alocado na memória;
